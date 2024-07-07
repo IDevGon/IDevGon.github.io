@@ -1,0 +1,53 @@
+{
+  "root": true,
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "parser": "vue-eslint-parser",
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser",
+    "sourceType": "module"
+  },
+  "plugins": ["@typescript-eslint", "vue"],
+  "extends": [
+    "airbnb-base",
+    "eslint:recommended",
+    "plugin:nuxt/recommended",
+    "plugin:vue/recommended",
+    "plugin:prettier/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "@nuxtjs/eslint-config-typescript"
+  ],
+  "rules": {
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/prefer-default-export": "off",
+    "vue/multi-word-component-names": "off",
+    "vue/html-self-closing": "off",
+    "vue/no-multiple-template-root": "off",
+    "no-shadow": 0,
+    "@typescript-eslint/no-shadow": "error",
+    "no-console": "warn",
+    "no-unused-vars": "off",
+    "comma-dangle": "off",
+    "semi": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "arrowSpacing": ["error", { "before": true, "after": true }],
+        "singleQuote": true,
+        "semi": true,
+        "useTabs": false,
+        "tabWidth": 2,
+        "trailingComma": "all",
+        "printWidth": 200,
+        "bracketSpacing": true,
+        "arrowParens": "avoid",
+        "endOfLine": "auto"
+      }
+    ],
+    "global-require": 0
+  }
+}

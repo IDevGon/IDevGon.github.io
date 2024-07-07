@@ -9,13 +9,29 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "homepage": "https://iDevGon.github.io/iDevGon.github.io",
-    "deploy": "gh-pages --dotfiles -d .output/public"
+    "deploy": "pnpm generate && gh-pages --dotfiles -d .output/public"
   },
   "dependencies": {
     "nuxt": "^3.12.3",
     "vue": "latest"
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1"
+    "@nuxt/types": "^2.18.1",
+    "@nuxtjs/eslint-config-typescript": "^12.1.0",
+    "@types/node": "^20.14.10",
+    "@typescript-eslint/eslint-plugin": "^7.15.0",
+    "@typescript-eslint/parser": "^7.15.0",
+    "eslint": "8.57.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-nuxt": "^4.0.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-vue": "^9.27.0",
+    "gh-pages": "^6.1.1",
+    "globals": "^15.8.0",
+    "prettier": "^3.3.2",
+    "sass": "^1.77.6",
+    "typescript-eslint": "^7.15.0"
   }
 }
