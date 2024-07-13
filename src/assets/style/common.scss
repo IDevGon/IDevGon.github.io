@@ -1,0 +1,42 @@
+h1 {
+  font-size: var(--size-32);
+}
+
+h2{
+  font-size: var(--size-28);
+}
+
+h3{
+  font-size: var(--size-24);
+}
+
+h4{
+  font-size: var(--size-20);
+}
+
+h5{
+  font-size: var(--size-16);
+}
+
+h6{
+  font-size: var(--size-14);
+}
+
+a, p, div, span, em, strong, label, input, textarea, select, button {
+  font-size: var(--size-16);
+}
+
+hr {
+  width: var(--size-full);
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-text);
+}
+
+div[data-content-id^="content:"] {
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-16);
+}

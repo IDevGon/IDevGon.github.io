@@ -1,0 +1,52 @@
+:root {
+  --color-primary: #007bff;
+  --color-secondary: #6c757d;
+  --color-success: #28a745;
+  --color-info: #17a2b8;
+  --color-warning: #ffc107;
+  --color-danger: #dc3545;
+  --color-light: #f8f9fa;
+  --color-dark: #343a40;
+  --color-border: #e9e9e9;
+  --color-background: #f8f9fa;
+  --color-text: #212529;
+
+  --size-1: 0.1rem;
+  @for $i from 2 through 100 {
+    @if $i % 2 == 0 {
+      --size-#{$i}: #{$i * 0.1}rem;
+    }
+  }
+
+  --size-half: 50%;
+  --size-full: 100%;
+  --weight-normal: 400;
+  --weight-medium: 500;
+  --weight-bold: 700;
+}
+
+@mixin setColorMode($mode) {
+  @if $mode == 'light' {
+    --color-primary: #007bff;
+    --color-secondary: #6c757d;
+    --color-border: #e9e9e9;
+    --color-background: #f8f9fa;
+    --color-text: #212529;
+  } @else {
+    --color-primary: #007bff;
+    --color-secondary: #6c757d;
+    --color-border: #e9e9e9;
+    --color-background: #343a40;
+    --color-text: #f8f9fa;
+  }
+
+}
+html {
+  @include setColorMode('light');
+
+  &.dark-mode {
+    @include setColorMode('dark');
+  }
+}
+
+

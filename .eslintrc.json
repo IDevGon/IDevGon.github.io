@@ -15,7 +15,6 @@
     "eslint:recommended",
     "plugin:nuxt/recommended",
     "plugin:vue/recommended",
-    "plugin:prettier/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "@nuxtjs/eslint-config-typescript"
   ],
@@ -27,27 +26,17 @@
     "vue/multi-word-component-names": "off",
     "vue/html-self-closing": "off",
     "vue/no-multiple-template-root": "off",
+    "max-len": "off",
+    "vue/singleline-html-element-content-newline": "off",
     "no-shadow": 0,
+    "arrow-parens": "off",
+    "no-spaced-func": "off",
+    "func-call-spacing": "off",
     "@typescript-eslint/no-shadow": "error",
     "no-console": "warn",
     "no-unused-vars": "off",
     "comma-dangle": "off",
     "semi": "off",
-    "prettier/prettier": [
-      "error",
-      {
-        "arrowSpacing": ["error", { "before": true, "after": true }],
-        "singleQuote": true,
-        "semi": true,
-        "useTabs": false,
-        "tabWidth": 2,
-        "trailingComma": "all",
-        "printWidth": 200,
-        "bracketSpacing": true,
-        "arrowParens": "avoid",
-        "endOfLine": "auto"
-      }
-    ],
     "global-require": 0
   }
 }
