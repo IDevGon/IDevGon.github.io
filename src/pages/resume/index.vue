@@ -1,6 +1,6 @@
 <script setup lang="ts">
-definePageMeta({
-  documentDriven: false,
+useHead({
+  title: '이력서',
 });
 </script>
 

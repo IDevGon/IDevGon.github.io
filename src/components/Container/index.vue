@@ -1,5 +1,17 @@
+<script lang="ts" setup>
+import { computed } from 'vue';
+import { useLayoutStore } from '@/store';
+
+const store = useLayoutStore();
+const minHeight = computed(() => {
+  const { headerHeight } = store;
+  const { footerHeight } = store;
+
+  return `calc(100vh - ${headerHeight + footerHeight}px)`;
+});
+</script>
 <template>
-  <div class="container">
+  <div class="container" :style="{ minHeight }">
     <slot />
   </div>
 </template>

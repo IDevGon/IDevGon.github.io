@@ -27,6 +27,7 @@
     "vue/html-self-closing": "off",
     "vue/no-multiple-template-root": "off",
     "max-len": "off",
+    "space-before-function-paren": "off",
     "vue/singleline-html-element-content-newline": "off",
     "no-shadow": 0,
     "arrow-parens": "off",

@@ -1,7 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+useHead({
+  title: 'Home',
+});
+</script>
 
 <template>
-  <h1>My Blog</h1>
+  <h1>DevGon Log</h1>
   <NuxtImg loading="lazy" width="200" height="200" src="https://avatars.githubusercontent.com/u/106735547?v=4" alt="내 사진" />
   <p>hello world</p>
 </template>

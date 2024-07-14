@@ -1,8 +1,16 @@
 <script lang="ts" setup>
+import { useLayoutStore } from '@/store';
+
 const colorMode = useColorMode();
+const store = useLayoutStore();
+const headerRef = ref<HTMLElement | null>(null);
+
+onMounted(() => {
+  store.setHeaderHeight(headerRef.value?.clientHeight || 0);
+});
 </script>
 <template>
-  <header>
+  <header ref="headerRef">
     <nav>
       <NuxtLink to="/"> DevGon </NuxtLink>
       <ul>
@@ -11,6 +19,9 @@ const colorMode = useColorMode();
         </li>
         <li>
           <NuxtLink to="/"> 홈 </NuxtLink>
+        </li>
+        <li>
+          <NuxtLink to="/logs"> 씨앗글 </NuxtLink>
         </li>
         <li>
           <NuxtLink to="/resume"> 이력서 </NuxtLink>
@@ -28,8 +39,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--size-8) var(--size-16);
-  border-bottom: 1px solid #ccc;
+  padding: var(--size-16);
+  border-bottom: var(--size-1) solid var(--color-border);
 
   a {
     color: var(--color-primary);
@@ -38,7 +49,14 @@ nav {
 
   ul {
     display: flex;
+    align-items: center;
+    gap: var(--size-8);
     list-style: none;
+
+    li {
+      display: flex;
+      align-items: center;
+    }
   }
 }
 </style>
