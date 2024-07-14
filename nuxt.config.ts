@@ -8,25 +8,23 @@ export default defineNuxtConfig({
       meta: [{ charset: 'utf-8' }, { name: 'viewport', content: 'width=device-width, initial-scale=1' }],
     },
   },
-
   colorMode: {
     preference: 'light',
     fallback: 'light',
   },
-
   content: {
+    experimental: {
+      clientDB: true,
+    },
     markdown: {
       anchorLinks: false,
     },
   },
-
   srcDir: 'src',
   ssr: false,
-
   nitro: {
     preset: 'github-pages',
   },
-
   css: ['@/assets/style/reset.css', '@/assets/style/common.scss'],
   compatibilityDate: '2024-04-03',
   devtools: { enabled: true },

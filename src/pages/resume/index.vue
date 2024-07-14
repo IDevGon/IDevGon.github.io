@@ -1,7 +1,11 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+definePageMeta({
+  documentDriven: false,
+});
+</script>
 
 <template>
-  <ContentDoc />
+  <ContentDoc path="resume" />
 </template>
 
 <style scoped lang="scss">

@@ -5,12 +5,13 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "generate": "nuxt generate",
+    "gen": "nuxt generate",
+    "start": "nuxt start",
     "lint": "eslint --ext .ts,.js,.vue --ignore-path .gitignore .",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "homepage": "https://iDevGon.github.io/iDevGon.github.io",
-    "deploy": "pnpm generate && gh-pages --dotfiles -d .output/public"
+    "deploy": "pnpm gen && gh-pages --dotfiles -d .output/public"
   },
   "dependencies": {
     "@nuxt/content": "^2.13.1",
