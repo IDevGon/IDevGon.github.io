@@ -1,6 +1,10 @@
 <script lang="ts" setup>
 import { useLayoutStore } from '@/store';
 
+defineOptions({
+  name: 'HeaderSection',
+});
+
 const colorMode = useColorMode();
 const store = useLayoutStore();
 const headerRef = ref<HTMLElement | null>(null);

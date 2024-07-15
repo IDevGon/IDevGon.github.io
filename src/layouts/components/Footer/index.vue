@@ -2,6 +2,9 @@
 import dayjs from 'dayjs';
 import { useLayoutStore } from '@/store';
 
+defineOptions({
+  name: 'FooterSection',
+});
 const year = computed(() => dayjs().year());
 const store = useLayoutStore();
 const footerRef = ref<HTMLElement | null>(null);

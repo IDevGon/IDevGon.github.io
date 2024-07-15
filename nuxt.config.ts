@@ -18,7 +18,6 @@ export default defineNuxtConfig({
     fallback: 'light',
   },
   content: {
-    contentHead: false,
     experimental: {
       clientDB: true,
     },

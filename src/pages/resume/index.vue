@@ -1,11 +1,15 @@
 <script setup lang="ts">
+defineOptions({
+  name: 'ResumePage',
+});
+
 useHead({
   title: '이력서',
 });
 </script>
 
 <template>
-  <ContentDoc path="resume" />
+  <ContentDoc :head="false" path="resume" />
 </template>
 
 <style scoped lang="scss">

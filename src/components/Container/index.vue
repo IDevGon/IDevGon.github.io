@@ -2,6 +2,9 @@
 import { computed } from 'vue';
 import { useLayoutStore } from '@/store';
 
+defineOptions({
+  name: 'Container',
+});
 const store = useLayoutStore();
 const minHeight = computed(() => {
   const { headerHeight } = store;

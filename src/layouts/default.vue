@@ -2,6 +2,10 @@
 import Header from './components/Header/index.vue';
 import Main from './components/Main/index.vue';
 import Footer from './components/Footer/index.vue';
+
+defineOptions({
+  name: 'DefaultLayout',
+});
 </script>
 
 <template>
@@ -9,8 +13,5 @@ import Footer from './components/Footer/index.vue';
   <Main>
     <slot />
   </Main>
-
   <Footer />
 </template>
-
-<style scoped lang="scss"></style>

@@ -9,4 +9,8 @@
 
 <script setup lang="ts">
 import TopButton from './components/TopButton.vue';
+
+defineOptions({
+  name: 'MainSection',
+});
 </script>

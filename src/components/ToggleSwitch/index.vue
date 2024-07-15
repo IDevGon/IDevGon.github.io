@@ -1,4 +1,7 @@
 <script setup lang="ts">
+defineOptions({
+  name: 'ToggleSwitch',
+});
 const props = withDefaults(
   defineProps<{
     name?: string;
