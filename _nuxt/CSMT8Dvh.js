@@ -1,0 +1,1 @@
+import{ad as t}from"./Da7RerYa.js";const i=t("layout",{state:()=>({headerHeight:0,footerHeight:0}),actions:{setHeaderHeight(e){this.headerHeight=e},setFooterHeight(e){this.footerHeight=e}}});export{i as u};

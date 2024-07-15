@@ -1,1 +1,0 @@
-import o from"./IME3pvTp.js";import{f as e,u as r,g as n,o as p}from"./CMzEi6LM.js";import"./Dm0Wdc_P.js";import"./DzixHBsT.js";import"./C-v3KzvZ.js";import"./Dnd51l0P.js";import"./eCFeXiiU.js";import"./CKpFNmde.js";import"./WAhAmb6W.js";const k=e({__name:"index",setup(m){return r({title:"연락처"}),(a,c)=>{const t=o;return p(),n(t,{path:"contact"})}}});export{k as default};

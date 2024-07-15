@@ -1,1 +1,0 @@
-import{_ as t}from"./ByZEJ-Ml.js";import{f as o,u as a,c as n,a as s,b as _,w as c,o as r,d as l}from"./CMzEi6LM.js";const f=o({__name:"index",setup(u){return a({title:"글 목록"}),(m,p)=>{const e=t;return r(),n("ul",null,[s("li",null,[_(e,{to:"/logs/1"},{default:c(()=>[l(" 게시글1 ")]),_:1})])])}}});export{f as default};
