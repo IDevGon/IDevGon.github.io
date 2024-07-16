@@ -1,4 +1,20 @@
 import path from 'path';
+import { readdirSync, readFileSync } from 'fs';
+
+function getLogs() {
+  const dirPath = path.resolve('src/content/logs');
+  const files = readdirSync(dirPath);
+  const logs = files.filter(file => file.endsWith('.md'));
+  return logs.map(file => {
+    const filePath = path.resolve(dirPath, file);
+    const content = readFileSync(filePath, 'utf-8');
+    const title = content.split('\n')[0].replace('# ', '');
+    return {
+      id: file.replace('.md', ''),
+      title,
+    };
+  });
+}
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -42,6 +58,11 @@ export default defineNuxtConfig({
       Roboto: {
         wght: [400, 500, 700],
       },
+    },
+  },
+  runtimeConfig: {
+    public: {
+      logs: getLogs(),
     },
   },
   vite: {
