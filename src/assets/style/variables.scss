@@ -1,5 +1,5 @@
 :root {
-  --color-primary: #007bff;
+  --color-primary: #fca525;
   --color-secondary: #6c757d;
   --color-success: #28a745;
   --color-info: #17a2b8;
@@ -9,7 +9,17 @@
   --color-dark: #343a40;
   --color-border: #cccccc;
   --color-background: #f8f9fa;
-  --color-text: #212529;
+  --color-background-dark: #343a40;
+  --color-text: #4f4e4e;
+  --color-text-dark: #f8f9fa;
+  --color-link: #f0a93e;
+  --color-link-hover: #c08827;
+  --color-react: #61dafb;
+  --color-next: #000000;
+  --color-ts: #3178c6;
+  --color-js: #f0db4f;
+  --color-vue: #41b883;
+  --color-nuxt: #00c58e;
 
   --size-1: 0.1rem;
   @for $i from 2 through 100 {
@@ -27,15 +37,9 @@
 
 @mixin setColorMode($mode) {
   @if $mode == 'light' {
-    --color-primary: #007bff;
-    --color-secondary: #6c757d;
-    --color-border: #e9e9e9;
     --color-background: #f8f9fa;
-    --color-text: #212529;
+    --color-text: #4f4e4e;
   } @else {
-    --color-primary: #007bff;
-    --color-secondary: #6c757d;
-    --color-border: #e9e9e9;
     --color-background: #343a40;
     --color-text: #f8f9fa;
   }

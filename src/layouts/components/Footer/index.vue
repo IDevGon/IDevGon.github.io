@@ -16,12 +16,13 @@ onMounted(() => {
 
 <template>
   <footer ref="footerRef">
-    <p>© {{ year }} DevGon</p>
+    <p>© {{ year }} devGon</p>
   </footer>
 </template>
 
 <style scoped lang="scss">
 footer {
+  text-align: center;
   padding: var(--size-16);
 }
 </style>

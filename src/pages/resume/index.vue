@@ -9,12 +9,30 @@ useHead({
 </script>
 
 <template>
-  <ContentDoc :head="false" path="resume" />
+  <div class="resume-container">
+    <ContentDoc :head="false" path="resume" />
+  </div>
 </template>
 
 <style scoped lang="scss">
-//.md-container:deep(div) {
-//  display: flex;
-//  flex-direction: column;
-//}
+.resume-container:deep() {
+  p {
+    line-height: 1.6;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-16);
+
+    & > li {
+      h4 {
+        line-height: 1;
+      }
+
+      font-size: var(--size-14);
+      line-height: 1.6;
+    }
+  }
+}
 </style>

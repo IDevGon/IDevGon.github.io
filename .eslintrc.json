@@ -38,6 +38,7 @@
     "no-unused-vars": "off",
     "comma-dangle": "off",
     "semi": "off",
-    "global-require": 0
+    "global-require": 0,
+    "implicit-arrow-linebreak": "off"
   }
 }

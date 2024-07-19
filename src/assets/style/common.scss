@@ -1,21 +1,44 @@
-h1 {
-  font-size: var(--size-32);
+h1, h2, h3, h4, h5, h6 {
+  position: relative;
+  padding-left: var(--size-16);
+  margin-bottom: var(--size-8);
+
+  &:before{
+    content: '';
+    display: inline-block;
+    left: 0;
+    z-index: 1;
+    width: var(--size-8);
+    height: var(--size-full);
+    position: absolute;
+    background: var(--color-primary);
+  }
 }
 
-h2{
+
+h1 {
+  font-size: var(--size-32);
+  font-weight: var(--weight-bold);
+}
+
+h2 {
   font-size: var(--size-28);
+  font-weight: var(--weight-bold);
 }
 
 h3{
   font-size: var(--size-24);
+  font-weight: var(--weight-bold);
 }
 
 h4{
   font-size: var(--size-20);
+  font-weight: var(--weight-medium);
 }
 
 h5{
   font-size: var(--size-16);
+  font-weight: var(--weight-medium);
 }
 
 h6{
@@ -39,4 +62,17 @@ div[data-content-id^="content:"] {
   display: flex;
   flex-direction: column;
   gap: var(--size-16);
+}
+
+*::selection {
+  background: var(--color-primary);
+  color: var(--color-background);
+}
+
+a {
+  color: var(--color-link);
+
+  &:hover {
+    color: var(--color-link-hover);
+  }
 }

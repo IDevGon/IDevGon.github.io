@@ -16,7 +16,7 @@ onMounted(() => {
 <template>
   <header ref="headerRef">
     <nav>
-      <NuxtLink to="/"> DevGon </NuxtLink>
+      <NuxtLink to="/"> dev<em>G</em>on </NuxtLink>
       <ul>
         <li>
           <ToggleSwitch v-model="colorMode.preference" type="color-mode" />
@@ -45,10 +45,23 @@ nav {
   align-items: center;
   padding: var(--size-16);
   border-bottom: var(--size-1) solid var(--color-border);
+  user-select: none;
 
   a {
-    color: var(--color-primary);
+    color: var(--color-text);
     text-decoration: none;
+  }
+
+  & > a {
+    font-size: var(--size-24);
+    font-weight: bold;
+    color: var(--color-text);
+
+    em {
+      font-size: inherit;
+      font-weight: inherit;
+      color: var(--color-primary);
+    }
   }
 
   ul {
