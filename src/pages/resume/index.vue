@@ -10,7 +10,7 @@ useHead({
 
 <template>
   <div class="resume-container">
-    <ContentDoc :head="false" path="resume" />
+    <ContentDoc class="content-doc" :head="false" path="resume" />
   </div>
 </template>
 

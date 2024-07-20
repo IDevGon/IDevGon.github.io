@@ -21,6 +21,12 @@ onMounted(() => {
 </template>
 
 <style scoped lang="scss">
+@media print {
+  footer {
+    display: none;
+  }
+}
+
 footer {
   text-align: center;
   padding: var(--size-16);

@@ -58,7 +58,7 @@ body {
   color: var(--color-text);
 }
 
-div[data-content-id^="content:"] {
+.content-doc {
   display: flex;
   flex-direction: column;
   gap: var(--size-16);

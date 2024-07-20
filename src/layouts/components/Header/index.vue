@@ -25,7 +25,7 @@ onMounted(() => {
           <NuxtLink to="/"> 홈 </NuxtLink>
         </li>
         <li>
-          <NuxtLink to="/logs"> 씨앗글 </NuxtLink>
+          <NuxtLink to="/logs"> 글 목록 </NuxtLink>
         </li>
         <li>
           <NuxtLink to="/resume"> 이력서 </NuxtLink>
@@ -39,6 +39,12 @@ onMounted(() => {
 </template>
 
 <style scoped lang="scss">
+@media print {
+  header {
+    display: none;
+  }
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -49,6 +55,7 @@ nav {
 
   a {
     color: var(--color-text);
+    font-weight: var(--weight-medium);
     text-decoration: none;
   }
 
@@ -67,12 +74,19 @@ nav {
   ul {
     display: flex;
     align-items: center;
-    gap: var(--size-8);
     list-style: none;
 
     li {
       display: flex;
       align-items: center;
+
+      &:not(:first-child) {
+        padding: 0 var(--size-16);
+      }
+
+      &:not(:last-child, :first-child) {
+        border-right: var(--size-4) solid var(--color-primary);
+      }
     }
   }
 }
