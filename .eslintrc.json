@@ -40,5 +40,11 @@
     "semi": "off",
     "global-require": 0,
     "implicit-arrow-linebreak": "off"
-  }
+  },
+  "ignorePatterns": [
+    "node_modules/",
+    ".nuxt/",
+    "output",
+    "dist/"
+  ]
 }

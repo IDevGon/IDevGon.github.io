@@ -16,10 +16,6 @@ useHead({
 
 <style scoped lang="scss">
 .resume-container:deep() {
-  p {
-    line-height: 1.6;
-  }
-
   ul {
     display: flex;
     flex-direction: column;

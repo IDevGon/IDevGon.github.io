@@ -1,30 +1,4 @@
 import path from 'path';
-import fs from 'fs';
-
-export function getLogs() {
-  const dirPath = path.resolve('src/content/logs');
-  const files = fs.readdirSync(dirPath);
-  const logs = files.filter(file => file.endsWith('.md'));
-
-  const logData = logs.map(file => {
-    const filePath = path.resolve(dirPath, file);
-    const stats = fs.statSync(filePath);
-    const content = fs.readFileSync(filePath, 'utf-8');
-    const lines = content.split('\n');
-    const title = lines[0].replace('# ', '');
-    const brief = lines.slice(1, 3).join(' ').trim();
-
-    return {
-      id: file.replace('.md', ''),
-      title,
-      brief,
-      createdAt: stats.birthtime,
-      updatedAt: stats.mtime,
-    };
-  });
-
-  return logData;
-}
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -58,6 +32,9 @@ export default defineNuxtConfig({
   ssr: false,
   nitro: {
     preset: 'github-pages',
+    prerender: {
+      routes: ['/articles.json'],
+    },
   },
   css: ['@/assets/style/reset.css', '@/assets/style/common.scss'],
   compatibilityDate: '2024-04-03',
@@ -71,11 +48,6 @@ export default defineNuxtConfig({
       Roboto: {
         wght: [400, 500, 700],
       },
-    },
-  },
-  runtimeConfig: {
-    public: {
-      logs: getLogs(),
     },
   },
   vite: {

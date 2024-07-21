@@ -9,8 +9,8 @@
   --color-dark: #343a40;
   --color-border: #cccccc;
   --color-gray1: #f8f9fa;
-  --color-gray2: #f1f3f5;
-    --color-gray3: #e9ecef;
+  --color-gray2: #e9ecef;
+  --color-gray3: #cfcfcf;
   --color-background: #f8f9fa;
   --color-background-dark: #343a40;
   --color-text: #4f4e4e;
@@ -36,6 +36,9 @@
   --weight-normal: 400;
   --weight-medium: 500;
   --weight-bold: 700;
+
+  --zIndex-normal: 1;
+  --zIndex-header: 2;
 }
 
 @mixin setColorMode($mode) {

@@ -15,6 +15,9 @@ const emit = defineEmits<{
   (e: 'update:currentPage', newPage: number): void;
 }>();
 
+const isShowFirstPageButton = computed(() => props.currentPage > Math.floor(MAX_PAGE / 2) + 1);
+const isShowLastPageButton = computed(() => totalPages.value > MAX_PAGE && totalPages.value - props.currentPage > Math.floor(MAX_PAGE / 2));
+
 const totalPages = computed(() => Math.ceil(props.totalCount / props.pageSize));
 
 const pages = computed(() => {
@@ -42,7 +45,7 @@ const changePage = (page: number) => {
 
 <template>
   <ul>
-    <li>
+    <li v-if="isShowFirstPageButton">
       <button :disabled="currentPage === 1" @click="changePage(1)">
         <i class="fa-solid fa-angles-left" />
       </button>
@@ -53,7 +56,7 @@ const changePage = (page: number) => {
       </button>
     </li>
     <li
-      v-for="page in pages"
+      v-for="page of pages"
       :key="page"
       :class="{
         active: page === currentPage,
@@ -62,10 +65,10 @@ const changePage = (page: number) => {
       <button @click="changePage(page)">{{ page }}</button>
     </li>
     <li>
-      <button :disabled="currentPage === totalCount" @click="changePage(currentPage + 1)"><i class="fa-solid fa-chevron-right" /></button>
+      <button :disabled="currentPage === totalPages" @click="changePage(currentPage + 1)"><i class="fa-solid fa-chevron-right" /></button>
     </li>
-    <li>
-      <button :disabled="currentPage === totalCount" @click="changePage(totalCount)"><i class="fa-solid fa-angles-right" /></button>
+    <li v-if="isShowLastPageButton">
+      <button :disabled="currentPage === totalPages" @click="changePage(totalCount)"><i class="fa-solid fa-angles-right" /></button>
     </li>
   </ul>
 </template>
@@ -84,8 +87,12 @@ ul {
       border: 0;
       border-radius: var(--size-4);
       cursor: pointer;
-      background: var(--color-gray3);
+      background: var(--color-gray2);
       user-select: none;
+    }
+
+    &:hover button:not(:disabled) {
+      background: var(--color-gray3);
     }
 
     &.active button {

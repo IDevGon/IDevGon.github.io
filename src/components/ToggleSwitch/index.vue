@@ -59,7 +59,7 @@ label {
     font-size: var(--size-14);
     display: inline-block;
     position: absolute;
-    z-index: 1;
+    z-index: var(--zIndex-normal);
     width: var(--size-12);
     height: var(--size-12);
     border-radius: var(--size-half);
