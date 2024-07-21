@@ -1,1 +1,0 @@
-import t from"./v11xmJUc.js";import{f as e,j as n,o as r}from"./DaHs-zuI.js";import"./5L9hb8Ps.js";import"./UgKRERnV.js";import"./C-v3KzvZ.js";import"./Dnd51l0P.js";import"./D4c-NJwi.js";import"./jzYlv4yC.js";import"./BhW59Pcu.js";const g=e({name:"LogPage",__name:"index",setup(m){return(p,c)=>{const o=t;return r(),n(o,{class:"content-doc"})}}});export{g as default};

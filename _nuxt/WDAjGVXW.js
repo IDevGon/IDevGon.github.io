@@ -1,0 +1,1 @@
+import t from"./BHLPbkZi.js";import{f as e,g as n,o as r}from"./BajgsKSb.js";import"./8boR-g67.js";import"./C0axADvp.js";import"./C-v3KzvZ.js";import"./Dnd51l0P.js";import"./CiWm7zW8.js";import"./CBsAPSK9.js";import"./C4FLPzhs.js";const g=e({name:"ArticlePage",__name:"index",setup(m){return(c,p)=>{const o=t;return r(),n(o,{class:"content-doc"})}}});export{g as default};
