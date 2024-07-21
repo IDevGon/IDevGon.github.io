@@ -40,7 +40,7 @@ export default defineNuxtModule({
         })
         .sort(({ createdAt: aCreatedAt }, { createdAt: bCreatedAt }) => aCreatedAt.getTime() - bCreatedAt.getTime());
 
-      const jsonPath = resolve(nuxt.options.srcDir, 'public/articles.json');
+      const jsonPath = resolve(nuxt.options.srcDir, 'public/articleList.json');
       writeFileSync(jsonPath, JSON.stringify(articles, null, 2), 'utf-8');
     });
   },

@@ -13,7 +13,7 @@ export const useArticleList = () => {
   const totalCount = computed(() => articleList.value.length);
 
   onMounted(async () => {
-    articleList.value = await $fetch<Article[]>('/articles.json');
+    articleList.value = await $fetch<Article[]>('/articleList.json');
   });
 
   watch(
