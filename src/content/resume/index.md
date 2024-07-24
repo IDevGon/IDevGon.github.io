@@ -147,6 +147,15 @@ React.js, Next.js, Vue.js, Nuxt, TypeScript 개발하는 프론트엔드 개발�
   </ul>
 
 ---
+
+## 오픈소스 기여
+### [toss/es-toolkit](https://github.com/toss/es-toolkit)
+
+- [PR #1](https://github.com/toss/es-toolkit/pull/115)
+  - `lodash` 라이브러리의 `without` 함수와 유사한 `without` 함수를 추가하였습니다.
+  - 이는 기존 `lodash` 라이브러리의 `without` 함수보다 성능이 최대 4배 뛰어납니다.  
+
+
 ## 학력
 ### 협성대학교
 경영학과 학사
