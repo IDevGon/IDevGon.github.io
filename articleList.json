@@ -1,102 +1,14 @@
 [
   {
     "id": "1",
-    "title": "블로그 제작기",
-    "description": "꽤 오랜 기간동안, 블로그를 만들어보고싶다는 생각은 했었지만,  \n회사 일이 바쁘다거나, 다른 할일들이 있다거나 이런저런 핑계로 운영을 미뤄왔다.  \n신입 때부터 블로그를 만들어야겠다는 생각을 미루고 미뤄 어느덫 경력은 4년차가 됐고,  ",
+    "title": "블로그 제작기 -1-",
+    "description": "## 플랫폼 고민… 벨로그냐? Github Pages냐?\n저는 꽤 오랜 기간동안, 블로그를 만들어보고싶다는 생각을 했었지만\n회사 일이 바쁘다거나, 다른 할 일들이 있다거나 이런저런 핑계로 운영을 미뤄왔습니다.",
     "createdAt": "2024-07-14T11:16:16.857Z",
-    "updatedAt": "2024-07-21T06:48:55.824Z",
+    "updatedAt": "2024-07-24T14:25:19.644Z",
     "hashTags": [
       "블로그",
       "Nuxt",
       "Github Pages"
     ]
-  },
-  {
-    "id": "2",
-    "title": "Hello World",
-    "description": "이것은 2번글",
-    "createdAt": "2024-07-15T14:27:52.971Z",
-    "updatedAt": "2024-07-15T14:29:55.201Z",
-    "hashTags": []
-  },
-  {
-    "id": "3",
-    "title": "이것은 3번째 글입니다.",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid atque dolorem dolores eius excepturi magni nostrum, quidem voluptatum? A aliquam autem cum dignissimos dolore ea esse et explicabo illum iure iusto molestiae, necessitatibus nemo nesciunt nisi perspiciatis quas qui repellat repellendus, sit, suscipit tempore totam voluptatum! Ad adipisci alias corporis deserunt dicta dolorum enim est expedita impedit labore magni nobis officiis quae quibusdam, reiciendis repellat voluptate voluptatem? Alias debitis eum incidunt ipsa molestias pariatur soluta. Animi dignissimos et eum, excepturi facere in nesciunt nostrum perferendis placeat sapiente similique sit totam veritatis. Accusamus aperiam at doloremque libero nobis pariatur quibusdam, reprehenderit.",
-    "createdAt": "2024-07-15T14:30:41.516Z",
-    "updatedAt": "2024-07-19T13:27:06.417Z",
-    "hashTags": []
-  },
-  {
-    "id": "4",
-    "title": "44444",
-    "description": "4번째",
-    "createdAt": "2024-07-19T14:16:01.460Z",
-    "updatedAt": "2024-07-19T14:21:17.386Z",
-    "hashTags": []
-  },
-  {
-    "id": "5",
-    "title": "5555",
-    "description": "5번째",
-    "createdAt": "2024-07-19T14:16:07.893Z",
-    "updatedAt": "2024-07-19T14:21:17.383Z",
-    "hashTags": []
-  },
-  {
-    "id": "6",
-    "title": "66666",
-    "description": "6번째",
-    "createdAt": "2024-07-19T14:16:10.915Z",
-    "updatedAt": "2024-07-19T14:21:24.485Z",
-    "hashTags": []
-  },
-  {
-    "id": "7",
-    "title": "777777",
-    "description": "7번째",
-    "createdAt": "2024-07-19T14:16:15.342Z",
-    "updatedAt": "2024-07-19T14:21:34.225Z",
-    "hashTags": []
-  },
-  {
-    "id": "8",
-    "title": "8888888",
-    "description": "8번째",
-    "createdAt": "2024-07-19T14:16:19.478Z",
-    "updatedAt": "2024-07-19T14:21:44.519Z",
-    "hashTags": []
-  },
-  {
-    "id": "9",
-    "title": "999999",
-    "description": "9번째",
-    "createdAt": "2024-07-19T14:16:28.355Z",
-    "updatedAt": "2024-07-19T14:21:52.283Z",
-    "hashTags": []
-  },
-  {
-    "id": "10",
-    "title": "1010100110",
-    "description": "10번째",
-    "createdAt": "2024-07-19T14:16:33.374Z",
-    "updatedAt": "2024-07-19T14:22:05.021Z",
-    "hashTags": []
-  },
-  {
-    "id": "11",
-    "title": "11111111111",
-    "description": "11번째",
-    "createdAt": "2024-07-19T14:16:37.446Z",
-    "updatedAt": "2024-07-19T14:22:11.942Z",
-    "hashTags": []
-  },
-  {
-    "id": "12",
-    "title": "12121211212",
-    "description": "12번째",
-    "createdAt": "2024-07-19T14:16:40.319Z",
-    "updatedAt": "2024-07-19T14:22:17.950Z",
-    "hashTags": []
   }
 ]
