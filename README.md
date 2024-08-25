@@ -33,5 +33,5 @@ Github Pages에 배포
 
 ```bash
 # npm
-pnpm deploy
+pnpm run deploy
 ```
