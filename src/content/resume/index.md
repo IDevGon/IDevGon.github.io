@@ -27,8 +27,42 @@ React.js, Next.js, Vue.js, Nuxt, TypeScript 개발하는 프론트엔드 개발�
 
 <ul>
     <li>
+      <h4>어드민 CDN 업로드 기능 개발</h4>
+      <p>2024. 08 ~ 2024. 09</p>
+        <br/>
+      <p>
+        AWS SDK를 이용하여 어드민 페이지에서 직접 CDN을 CRUD 할 수 있는 기능 개발.<br/>
+        기존 S3에 직접 업로드하는 방식보다 편리하며, 확실하게 트래킹 할 수 있어 안전함.
+      </p>
+    </li>
+    <li>
+      <h4>브랜드관 페이지 SSR, SEO 적용</h4>
+      <p>2024. 07 ~ 2024. 08</p>
+        <br/>
+      <p>
+        브랜드관 페이지를 CSR -> SSR 로 적용<br/>
+        초기 로딩속도 향상 및 SEO를 크게 증진시킴.<br/>
+        키워드 노출 및, 펫프렌즈 유입 인원 수가 30%이상 증가.
+      </p>
+    </li>
+    <li>
+      <h4>어드민 레거시 환경 마이그레이션</h4>
+      <p>2024. 3 ~ 2024. 7</p>
+        <br/>
+      <p>
+        펫프렌즈 어드민의 레거시 환경을 모던한 개발 환경으로 마이그레이션<br/>
+        <ul class="inner-list">
+          <li>Vue2 -> Vue3</li>
+          <li>vue-cli -> Vite</li>
+          <li>node12 -> node18</li>
+        </ul>
+        <br/>
+        개발 경험 및 프로덕트 개발 속도를 크게 개선함.
+      </p>
+    </li>
+    <li>
       <h4>검색 페이지 Vue.js -> Next.js 마이그레이션 및 SSR, SEO</h4>
-      <p>2023. 10 ~ 2023. 12</p>
+      <p>2023. 10 ~ 2024. 01</p>
         <br/>
       <p>
         펫프렌즈의 검색 페이지를 Vue.js 기반에서 next.js 로 마이그레이션 하면서<br />
@@ -73,9 +107,11 @@ React.js, Next.js, Vue.js, Nuxt, TypeScript 개발하는 프론트엔드 개발�
         SEO도 크게 향상 되었습니다.<br />
         <br />
         라이트하우스 기준으로 다음과 같은 성능 향상이 있었습니다.<br />
-        - performance: 40점대 -> 90점대<br />
-        - accessiblity: 80점대 -> 90점대<br />
-        - seo: 80점대 -> 90~100점대
+        <ul class="inner-list">
+          <li>performance: 40점대 -> 90점대</li>
+          <li>accessiblity: 80점대 -> 90점대</li>
+          <li>seo: 80점대 -> 90~100점대</li>
+        </ul>
       </p>
     </li>
     <li>
@@ -129,9 +165,11 @@ React.js, Next.js, Vue.js, Nuxt, TypeScript 개발하는 프론트엔드 개발�
         <br />
         저는 다음과 같은 기능들을 중점적으로 개발 및 유지보수 했습니다.<br />
         <br />
-        - 상품 등록 및 수정과 이에 따른 유효성 로직 구축<br />
-        - 실시간 방송의 방송 관리 페이지 구축 (방송 키기, 끄기 및 채팅방의 유저 관리 기능 등)<br />
-        - 방송 서비스의 대시보드 구축 (유저들의 이용률 및, 방송들 통한 구매전환률 등을 집계하여 chart.js로 시각화)
+        <ul class="inner-list">
+          <li>상품 등록 및 수정과 이에 따른 유효성 로직 구축</li>
+          <li>실시간 방송의 방송 관리 페이지 구축 (방송 키기, 끄기 및 채팅방의 유저 관리 기능 등)</li>
+          <li>방송 서비스의 대시보드 구축 (유저들의 이용률 및, 방송들 통한 구매전환률 등을 집계하여 chart.js로 시각화)</li>
+        </ul>
       </p>
     </li>
     <li>
@@ -152,9 +190,9 @@ React.js, Next.js, Vue.js, Nuxt, TypeScript 개발하는 프론트엔드 개발�
 ### [toss/es-toolkit](https://github.com/toss/es-toolkit)
 
 - [PR #1](https://github.com/toss/es-toolkit/pull/115)
-  - `lodash` 라이브러리의 `without` 함수와 유사한 `without` 함수를 추가하였습니다.
-  - 이는 기존 `lodash` 라이브러리의 `without` 함수보다 성능이 최대 4배 뛰어납니다.  
+  - `lodash` 라이브러리의 `without` 함수와 유사한 `without` 함수를 추가 
 
+---
 
 ## 학력
 ### 협성대학교

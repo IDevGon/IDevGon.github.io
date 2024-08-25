@@ -19,7 +19,7 @@ useHead({
   ul {
     display: flex;
     flex-direction: column;
-    gap: var(--size-16);
+    gap: var(--size-24);
 
     & > li {
       h4 {
@@ -28,6 +28,12 @@ useHead({
 
       font-size: var(--size-14);
       line-height: 1.6;
+    }
+
+    .inner-list {
+      list-style: disc;
+      padding-left: var(--size-10);
+      gap: var(--size-4);
     }
   }
 }
