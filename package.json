@@ -8,7 +8,7 @@
     "gen": "nuxt generate",
     "start": "nuxt start",
     "lint": "eslint --ext .ts,.js,.vue --ignore-path .gitignore .",
-    "preview": "nuxt preview",
+    "preview": "pnpm gen && nuxt preview",
     "postinstall": "nuxt prepare",
     "homepage": "https://iDevGon.github.io/iDevGon.github.io",
     "deploy": "pnpm gen && gh-pages --dotfiles -d .output/public"

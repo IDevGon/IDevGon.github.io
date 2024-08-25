@@ -1,75 +1,37 @@
-# Nuxt 3 Minimal Starter
+# DevGon 블로그
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Github Pages로 https://idevgon.github.io/ 에서 서비스 됩니다.
 
 ## Setup
 
-Make sure to install the dependencies:
+설치
 
 ```bash
-# npm
-npm install
-
-# pnpm
 pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
 
 ## Development Server
 
-Start the development server on `http://localhost:3000`:
+개발모드 실행
 
 ```bash
-# npm
-npm run dev
-
-# pnpm
 pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
 ```
 
-## Production
+## Preview
 
-Build the application for production:
+빌드 결과물 미리 보기
 
 ```bash
 # npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+pnpm preview
 ```
 
-Locally preview production build:
+## 배포
+
+Github Pages에 배포
 
 ```bash
 # npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
+pnpm deploy
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
