@@ -39,7 +39,8 @@ onMounted(() => {
 <style scoped lang="scss">
 header {
   position: sticky;
-  background: var(--color-background);
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
   z-index: var(--zIndex-header);
   top: 0;
 

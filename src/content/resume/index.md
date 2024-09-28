@@ -96,25 +96,6 @@ React.js, Next.js, Vue.js, Nuxt, TypeScript 개발하는 프론트엔드 개발�
       </p>
     </li>
     <li>
-      <h4>상품 상세, 메인 페이지 Vue.js -> Next.js 마이그레이션</h4>
-      <p>2022. 11 ~ 2023. 06</p>
-        <br/>
-      <p>
-        기존 Vue.js 기반으로 작성된 펫프렌즈앱 프로젝트를<br />
-        상품 상세 페이지와, 메인 페이지를 Next.js로 마이그레이션 하는 데 기여했습니다.<br />
-        <br />
-        두 페이지 모두 ISR((Incremental Static Regeneration)로 렌더링하여 성능 향상에 기여했고,<br />
-        SEO도 크게 향상 되었습니다.<br />
-        <br />
-        라이트하우스 기준으로 다음과 같은 성능 향상이 있었습니다.<br />
-        <ul class="inner-list">
-          <li>performance: 40점대 -> 90점대</li>
-          <li>accessiblity: 80점대 -> 90점대</li>
-          <li>seo: 80점대 -> 90~100점대</li>
-        </ul>
-      </p>
-    </li>
-    <li>
       <h4>Vue.js 레거시 프로젝트 환경 업데이트 및 마이그레이션</h4>
       <p>2022. 09 ~ 2023. 10</p>
         <br/>

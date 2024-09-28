@@ -2,6 +2,7 @@ import { statSync, readFileSync, readdirSync, writeFileSync } from 'fs';
 import { resolve } from 'path';
 import { defineNuxtModule } from '@nuxt/kit';
 import matter from 'gray-matter';
+import dayjs from 'dayjs';
 
 function getTitleAndDescription(markdown: string) {
   const titleMatch = markdown.match(/^# (.*)$/m);
@@ -10,7 +11,7 @@ function getTitleAndDescription(markdown: string) {
   const lines = markdown.split('\n');
   const titleIndex = lines.findIndex(line => line.startsWith('# '));
   const contentLines = lines.slice(titleIndex + 1).filter(line => line.trim() !== '');
-  const description = contentLines.slice(0, 3).join('\n');
+  const description = contentLines.slice(0, 3).join('\n').replace(/#/g, '');
 
   return { title, description };
 }
@@ -32,8 +33,8 @@ export default defineNuxtModule({
           const stats = statSync(filePath);
           return {
             id: file.replace('.md', ''),
-            createdAt: stats.birthtime,
-            updatedAt: stats.mtime,
+            createdAt: dayjs(stats.birthtime).format('YYYY-MM-DD'),
+            updatedAt: dayjs(stats.mtime).format('YYYY-MM-DD'),
             title,
             description,
             hashTags,

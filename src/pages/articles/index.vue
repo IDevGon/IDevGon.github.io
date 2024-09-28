@@ -13,9 +13,12 @@ const { articleList, currentPage, totalCount, pageSize } = useArticleList();
 
 <template>
   <ul class="articles">
-    <li v-for="{ id, title, description, hashTags } of articleList" :key="id">
+    <li v-for="{ id, title, description, hashTags, createdAt } of articleList" :key="id">
       <NuxtLink :to="`/articles/${id}`">
-        <h1>{{ title }}</h1>
+        <header>
+          <h1>{{ title }}</h1>
+          <time>{{ createdAt }}</time>
+        </header>
         <EllipsisTypo number-of-line="3">{{ description }}</EllipsisTypo>
         <HashTag :hash-tags="hashTags" />
       </NuxtLink>
@@ -29,6 +32,11 @@ ul.articles {
   min-height: 80rem;
 
   li {
+    header {
+      display: flex;
+      justify-content: space-between;
+    }
+
     padding: 0 var(--size-16);
     margin-bottom: var(--size-8);
     border-radius: var(--size-8);
