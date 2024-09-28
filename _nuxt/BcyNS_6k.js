@@ -1,0 +1,1 @@
+import{af as t}from"./D9IZc591.js";const i=t("layout",{state:()=>({headerHeight:0,footerHeight:0}),actions:{setHeaderHeight(e){this.headerHeight=e},setFooterHeight(e){this.footerHeight=e}}});export{i as u};
